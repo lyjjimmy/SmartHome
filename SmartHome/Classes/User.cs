@@ -79,7 +79,7 @@ namespace SmartHome.Classes
         }
 
         //Computes the one-way hash from the input given and returns it as a string
-        public string computePasswordHash(string password)
+        public static string computePasswordHash(string password)
         {
             string hash;
             MD5 md5Hash = MD5.Create();
@@ -87,6 +87,38 @@ namespace SmartHome.Classes
             md5Hash.ComputeHash(input);
             hash = md5Hash.Hash.ToString();
             return hash;
+        }
+
+        public bool removeUser(string username)
+        {
+            return true;
+        }
+
+        public string updateUser()
+        {
+            return "Blah";
+        }
+
+        /* User attempts to login. If username does not exist, or the password does not match, return false. 
+         * Detail is not given as to which failure it is (username or password), 
+         * in order to stop people trying to glean usernames from the system. */
+        public static bool loginUser(string userName, string userPassword)
+        {
+            //Iterate through the list of users to find the user 
+            foreach(userPassword iterator in listihaventmadeyet)
+            if (userName = iterator.userName)
+            {
+                if(iterator.userPassword == computePasswordHash(userPassword))
+                {
+                    return true; //Password matches, user may login.
+                }
+                else 
+                {
+                    return false; //Password does not match, user may not login
+                }
+            }
+
+            return false;
         }
     }
 }
