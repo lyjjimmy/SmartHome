@@ -49,7 +49,6 @@ namespace SmartHome.Classes
 
         public string addUser(int userType, string userName, string userPassword, string userContact)
         {
-            bool userDetailsFine = true;
             /*Test for usernames being same as already entered into system
             foreach(User usersblah of What that userlist is)
                 {
@@ -70,19 +69,13 @@ namespace SmartHome.Classes
             
 
             //Username 16 max no spaces, password 6 char, at least one letter, number and special, 
-            if (userDetailsFine)
-            {
                 this.userID = 0; //Create new userid here
                 this.userType = userType;
                 this.userName = userName;
                 this.userPassword = computePasswordHash(userPassword);
                 this.userContact = userContact;
                 return "User account successfully created";
-            }
             
-
-            //Logically will never reach this section of the code, but needed anyway as default return.
-            return "Unknown error occurred in account creation";
         }
 
         //Computes the one-way hash from the input given and returns it as a string
