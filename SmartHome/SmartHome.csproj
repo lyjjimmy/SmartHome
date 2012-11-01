@@ -278,7 +278,7 @@
     </Compile>
     <Compile Include="Classes\Sensor.cs" />
     <Compile Include="Classes\RandomSensorGenerator.cs" />
-    <Compile Include="Classes\Person.cs" />
+    <Compile Include="Classes\User.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
