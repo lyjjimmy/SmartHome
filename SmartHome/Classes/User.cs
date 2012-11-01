@@ -17,7 +17,7 @@ namespace SmartHome.Classes
         }
 
         //What kind of user this is (Medical staff, patient, etc.)
-        public int userType //Make protected?
+        protected int userType
         {
             get { return userType; }
             set { userType = value; } 
@@ -32,16 +32,12 @@ namespace SmartHome.Classes
 
         }
 
-        //Contains the encrypted version of the password created by the one-way hashing
+        //Contains the encrypted version of the password created by the md5 hash of the password itself.
         protected string userPassword //Either make type byte[length of hash] or make sure that the thing spits out a string of set size?
         {
             
             get { return userPassword; }
-            set
-            {
-                MD5 dodgy = MD5.Create();
-                //dodgy.ComputeHash(value, 0, value.Length);    
-            }
+            set { userPassword = computePasswordHash(value); }
         }
 
         //User contact details ie. Phone number
@@ -71,6 +67,7 @@ namespace SmartHome.Classes
             }
 
             //Check if user password contatins at least one letter, number and symbol. (alphanumsymbol)
+            
 
             //Username 16 max no spaces, password 6 char, at least one letter, number and special, 
             if (userDetailsFine)
@@ -78,12 +75,25 @@ namespace SmartHome.Classes
                 this.userID = 0; //Create new userid here
                 this.userType = userType;
                 this.userName = userName;
-                this.userPassword = userPassword;
+                this.userPassword = computePasswordHash(userPassword);
                 this.userContact = userContact;
                 return "User account successfully created";
             }
+            
 
+            //Logically will never reach this section of the code, but needed anyway as default return.
             return "Unknown error occurred in account creation";
+        }
+
+        //Computes the one-way hash from the input given and returns it as a string
+        public string computePasswordHash(string password)
+        {
+            string hash;
+            MD5 md5Hash = MD5.Create();
+            byte[] input = System.Text.Encoding.UTF8.GetBytes(password);
+            md5Hash.ComputeHash(input);
+            hash = md5Hash.Hash.ToString();
+            return hash;
         }
     }
 }
