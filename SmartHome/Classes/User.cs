@@ -102,11 +102,11 @@ namespace SmartHome.Classes
         /* User attempts to login. If username does not exist, or the password does not match, return false. 
          * Detail is not given as to which failure it is (username or password), 
          * in order to stop people trying to glean usernames from the system. */
-        public static bool loginUser(string userName, string userPassword)
+        public static bool loginUser(string userName, string userPassword, LinkedList<User> userslist ) //Supposed to pass the linked list to the sub here
         {
-            //Iterate through the list of users to find the user 
-            foreach(userPassword iterator in listihaventmadeyet)
-            if (userName = iterator.userName)
+            //Iterate through the list of users to find the user.
+            foreach(User iterator in userslist) //This is supposed to iterate through the linked list
+            if (userName == iterator.userName) //If the user matches the username given
             {
                 if(iterator.userPassword == computePasswordHash(userPassword))
                 {
