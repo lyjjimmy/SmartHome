@@ -61,7 +61,7 @@
         <tr>
             <td class="auto-style9">Patient Name</td>
             <td class="auto-style15">
-                <asp:Label ID="patientNameLabel" runat="server" Text="Label for Patient Name"></asp:Label>
+                <asp:Label ID="patientNameLabel" runat="server" Text="Label for Patient Name" Font-Bold="True" Font-Size="Medium"></asp:Label>
             </td>
             <td class="auto-style9">Patient Gender</td>
             <td class="auto-style2">

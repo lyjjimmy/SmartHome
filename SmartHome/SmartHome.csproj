@@ -277,6 +277,7 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Patient.cs" />
     <Compile Include="Classes\Sensor.cs" />
     <Compile Include="Classes\RandomSensorGenerator.cs" />
     <Compile Include="Classes\User.cs" />

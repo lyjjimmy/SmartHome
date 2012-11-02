@@ -207,9 +207,10 @@ namespace SmartHome.Classes
          */
         private string generateLocationPoint(string previousLocation)
         {
-            double latitude = 0;
-            double longitude = 0;
+            double latitude = 0.0;
+            double longitude = 0.0;
 
+            // get the starting location
             if (previousLocation != "0,0") // has previous location
             {
                 double outdouble;
@@ -221,6 +222,16 @@ namespace SmartHome.Classes
                     longitude = double.Parse((string)values.GetValue(1));
                 }
             }
+            else // has no previous location
+            {
+                latitude = -randomNumberGenerator.Next(3340, 3450)/100.0;
+                longitude = randomNumberGenerator.Next(15050, 15140) / 100.0;
+            }
+
+            // generate the returned location
+            double difference = randomNumberGenerator.Next(0, 5) / 1000000.0;
+            latitude += difference;
+            longitude -= difference;
 
             return "" + latitude + "," + longitude;
         }

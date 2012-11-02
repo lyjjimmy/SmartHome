@@ -6,8 +6,10 @@ using System.Security.Cryptography;
 
 namespace SmartHome.Classes
 {
-    public class User
+    abstract class User
     {
+
+        public enum UserTypes { PATIENT, OPERATOR, DOCTOR, CARRER };
 
         //Internal username
         public int userID
