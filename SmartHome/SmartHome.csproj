@@ -198,6 +198,8 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
     <Content Include="PatientProfile.aspx" />
+    <Content Include="ReminderSetting.aspx" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -277,6 +279,8 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Carrer.cs" />
+    <Compile Include="Classes\Doctor.cs" />
     <Compile Include="Classes\Patient.cs" />
     <Compile Include="Classes\Sensor.cs" />
     <Compile Include="Classes\RandomSensorGenerator.cs" />
@@ -312,6 +316,13 @@
     </Compile>
     <Compile Include="PatientProfile.aspx.designer.cs">
       <DependentUpon>PatientProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReminderSetting.aspx.cs">
+      <DependentUpon>ReminderSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReminderSetting.aspx.designer.cs">
+      <DependentUpon>ReminderSetting.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

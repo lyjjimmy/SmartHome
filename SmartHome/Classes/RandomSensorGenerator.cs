@@ -9,6 +9,11 @@ namespace SmartHome.Classes
     {
         private enum SensorTypes { HEART_RATE, BLOOD_PRESSURE, TEMPERATURE, FAIL_STATUS, GPS };
         private Sensor sensor;
+        public Sensor Sensor
+        {
+            get { return sensor; }
+            set { value = sensor; }
+        }
         private Random randomNumberGenerator;
 
         public RandomSensorGenerator(Sensor sensor)
@@ -21,6 +26,7 @@ namespace SmartHome.Classes
             string returnedValue = "";
             int outint;
             double outdouble;
+            randomNumberGenerator = new Random();
 
             switch (sensor.SensorType)
             {
@@ -66,6 +72,7 @@ namespace SmartHome.Classes
                     break;
 
                 case (int)SensorTypes.GPS:
+                    returnedValue = generateLocationPoint(sensor.SensorData);
                     break;
                 default:
                     break;
@@ -148,7 +155,7 @@ namespace SmartHome.Classes
         {
             if (previousReading < 0) // no previous reading
             {
-                return randomNumberGenerator.Next(360, 380) / 10;
+                return randomNumberGenerator.Next(360, 380) / 10.0;
             }
             else
             {

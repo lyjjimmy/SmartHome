@@ -6,20 +6,27 @@ using System.Security.Cryptography;
 
 namespace SmartHome.Classes
 {
-    abstract class User
+    public abstract class User
     {
+<<<<<<< HEAD
 
         public enum UserTypes { PATIENT, OPERATOR, DOCTOR, CARER };
 
+=======
+        public enum UserTypes { PATIENT, DOCTOR, CARRER, OPERATOR };
+        
+>>>>>>> User Classes
         //Internal username
-        public int userID
+        private int userID;
+        public int UserID
         {
             get { return userID; }
             set { userID = value; }
         }
 
         //What kind of user this is (Medical staff, patient, etc.)
-        protected int userType
+        private int userType;
+        public int UserType
         {
             get { return userType; }
             set { userType = value; } 
@@ -27,7 +34,8 @@ namespace SmartHome.Classes
         }
 
         //Username used by the user to login
-        public string userName
+        private string userName;
+        public string UserName
         {
             get { return userName; }
             set { userName = value; }
@@ -35,7 +43,12 @@ namespace SmartHome.Classes
         }
 
         //Contains the encrypted version of the password created by the md5 hash of the password itself.
+<<<<<<< HEAD
         protected string userPassword
+=======
+        private string userPassword;
+        public string UserPassword //Either make type byte[length of hash] or make sure that the thing spits out a string of set size?
+>>>>>>> User Classes
         {
             
             get { return userPassword; }
@@ -43,7 +56,8 @@ namespace SmartHome.Classes
         }
 
         //User contact details ie. Phone number
-        public string userContact
+        private string userContact;
+        public string UserContact
         {
             get { return userContact; }
             set { userContact = value; }
@@ -121,6 +135,11 @@ namespace SmartHome.Classes
             }
 
             return false;
+        }
+
+        public string ToString()
+        {
+            return UserName + " - " + UserContact;
         }
     }
 }

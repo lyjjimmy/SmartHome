@@ -407,13 +407,11 @@ fieldset {
         font-size: 1.2em;
         margin: 5px 0 6px 0;
         padding: 5px;
-        width: 300px;
-    }
+        }
 
     textarea {
         font-family: inherit;
-        width: 500px;
-    }
+        }
     
         input:focus, textarea:focus {
             border: 1px solid #7ac0da;
@@ -491,17 +489,21 @@ input[type="checkbox"].input-validation-error {
 }
 
 .validation-summary-errors {
-    color: #e80c4d;
-    font-weight: bold;
-    font-size: 1.1em;
-}
 
-.validation-summary-valid {
-    display: none;
-}
 
 /* tables
 ----------------------------------------------------------*/
+table {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 0.75em;
+    font-size: small;
+}
+
+---*/
 table {
     border-collapse: collapse;
     border-spacing: 0;
