@@ -12,6 +12,12 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <style type="text/css">
+        .auto-style1 {
+            color: #000066;
+            background-color: #FFFFFF;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -38,7 +44,7 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a runat="server" href="~/">your logo here</a>
+                    <span class="auto-style1">&nbsp;Smart Home NBN </span>
                 </p>
             </div>
             <div class="float-right">
@@ -62,7 +68,7 @@
                 <nav>
                     <ul id="menu">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About.aspx">About</a></li>
+                        <li><a runat="server" href="~/About.aspx">Help</a></li>
                         <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
                     </ul>
                 </nav>
@@ -78,7 +84,7 @@
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> FEIT University&nbsp; of Technology, Sydney - SEP Spring 2012 Group Bronte C2</p>
             </div>
         </div>
     </footer>

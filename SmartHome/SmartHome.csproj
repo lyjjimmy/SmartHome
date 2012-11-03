@@ -197,6 +197,7 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
+    <Content Include="PatientListing.aspx" />
     <Content Include="PatientProfile.aspx" />
     <Content Include="ReminderSetting.aspx" />
     <Content Include="ClassDiagram1.cd" />
@@ -282,6 +283,7 @@
     <Compile Include="Classes\Carrer.cs" />
     <Compile Include="Classes\Doctor.cs" />
     <Compile Include="Classes\Patient.cs" />
+    <Compile Include="Classes\Reminder.cs" />
     <Compile Include="Classes\Sensor.cs" />
     <Compile Include="Classes\RandomSensorGenerator.cs" />
     <Compile Include="Classes\User.cs" />
@@ -301,6 +303,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PatientListing.aspx.cs">
+      <DependentUpon>PatientListing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientListing.aspx.designer.cs">
+      <DependentUpon>PatientListing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -353,7 +362,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>50661</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:55828/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

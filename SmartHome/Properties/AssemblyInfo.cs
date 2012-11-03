@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SmartHome")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("SmartHomeNBN")]
 [assembly: AssemblyProduct("SmartHome")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
+[assembly: AssemblyCopyright("Copyright © Group Bronte C2")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

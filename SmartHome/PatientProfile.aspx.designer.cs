@@ -31,22 +31,22 @@ namespace SmartHome {
         protected global::System.Web.UI.WebControls.Label patientContactLabel;
         
         /// <summary>
-        /// patientCarrerLabel control.
+        /// carrersBulletedList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label patientCarrerLabel;
+        protected global::System.Web.UI.WebControls.BulletedList carrersBulletedList;
         
         /// <summary>
-        /// patientDoctorLabel control.
+        /// doctorsBulletedList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label patientDoctorLabel;
+        protected global::System.Web.UI.WebControls.BulletedList doctorsBulletedList;
         
         /// <summary>
         /// liveHeartRateLabel control.
@@ -94,6 +94,15 @@ namespace SmartHome {
         protected global::System.Web.UI.WebControls.Label liveTemperatureLabel;
         
         /// <summary>
+        /// alarmStatusLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label alarmStatusLabel;
+        
+        /// <summary>
         /// startRecordButton control.
         /// </summary>
         /// <remarks>
@@ -110,5 +119,14 @@ namespace SmartHome {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button endRecordButton;
+        
+        /// <summary>
+        /// monitorTimer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.Timer monitorTimer;
     }
 }

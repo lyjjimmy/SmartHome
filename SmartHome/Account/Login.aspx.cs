@@ -20,5 +20,10 @@ namespace SmartHome.Account
                 RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
             }
         }
+
+        protected void loginButton_Click(object sender, EventArgs e)
+        {
+            //TODO finish the authentication process
+        }
     }
 }
