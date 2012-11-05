@@ -9,7 +9,7 @@ namespace SmartHome.Classes
     abstract class User
     {
 
-        public enum UserTypes { PATIENT, OPERATOR, DOCTOR, CARRER };
+        public enum UserTypes { PATIENT, OPERATOR, DOCTOR, CARER };
 
         //Internal username
         public int userID
@@ -35,7 +35,7 @@ namespace SmartHome.Classes
         }
 
         //Contains the encrypted version of the password created by the md5 hash of the password itself.
-        protected string userPassword //Either make type byte[length of hash] or make sure that the thing spits out a string of set size?
+        protected string userPassword
         {
             
             get { return userPassword; }
@@ -104,7 +104,7 @@ namespace SmartHome.Classes
         /* User attempts to login. If username does not exist, or the password does not match, return false. 
          * Detail is not given as to which failure it is (username or password), 
          * in order to stop people trying to glean usernames from the system. */
-        public static bool loginUser(string userName, string userPassword, LinkedList<User> userslist ) //Supposed to pass the linked list to the sub here
+        public static bool loginUser(string userName, string userPassword, LinkedList<User> userslist ) //Supposed to pass the linked list to the sub here, change to mysql connector soon
         {
             //Iterate through the list of users to find the user.
             foreach(User iterator in userslist) //This is supposed to iterate through the linked list
