@@ -8,14 +8,8 @@ namespace SmartHome.Classes
 {
     public abstract class User
     {
-<<<<<<< HEAD
-
-        public enum UserTypes { PATIENT, OPERATOR, DOCTOR, CARER };
-
-=======
         public enum UserTypes { PATIENT, DOCTOR, CARRER, OPERATOR };
-        
->>>>>>> User Classes
+
         //Internal username
         private int userID;
         public int UserID
@@ -29,7 +23,7 @@ namespace SmartHome.Classes
         public int UserType
         {
             get { return userType; }
-            set { userType = value; } 
+            set { userType = value; }
 
         }
 
@@ -43,14 +37,10 @@ namespace SmartHome.Classes
         }
 
         //Contains the encrypted version of the password created by the md5 hash of the password itself.
-<<<<<<< HEAD
-        protected string userPassword
-=======
         private string userPassword;
         public string UserPassword //Either make type byte[length of hash] or make sure that the thing spits out a string of set size?
->>>>>>> User Classes
         {
-            
+
             get { return userPassword; }
             set { userPassword = computePasswordHash(value); }
         }
@@ -82,16 +72,16 @@ namespace SmartHome.Classes
             }
 
             //Check if user password contatins at least one letter, number and symbol. (alphanumsymbol)
-            
+
 
             //Username 16 max no spaces, password 6 char, at least one letter, number and special, 
-                this.userID = 0; //Create new userid here
-                this.userType = userType;
-                this.userName = userName;
-                this.userPassword = computePasswordHash(userPassword);
-                this.userContact = userContact;
-                return "User account successfully created";
-            
+            this.userID = 0; //Create new userid here
+            this.userType = userType;
+            this.userName = userName;
+            this.userPassword = computePasswordHash(userPassword);
+            this.userContact = userContact;
+            return "User account successfully created";
+
         }
 
         //Computes the one-way hash from the input given and returns it as a string
@@ -118,21 +108,21 @@ namespace SmartHome.Classes
         /* User attempts to login. If username does not exist, or the password does not match, return false. 
          * Detail is not given as to which failure it is (username or password), 
          * in order to stop people trying to glean usernames from the system. */
-        public static bool loginUser(string userName, string userPassword, LinkedList<User> userslist ) //Supposed to pass the linked list to the sub here, change to mysql connector soon
+        public static bool loginUser(string userName, string userPassword, LinkedList<User> userslist) //Supposed to pass the linked list to the sub here
         {
             //Iterate through the list of users to find the user.
-            foreach(User iterator in userslist) //This is supposed to iterate through the linked list
-            if (userName == iterator.userName) //If the user matches the username given
-            {
-                if(iterator.userPassword == computePasswordHash(userPassword))
+            foreach (User iterator in userslist) //This is supposed to iterate through the linked list
+                if (userName == iterator.userName) //If the user matches the username given
                 {
-                    return true; //Password matches, user may login.
+                    if (iterator.userPassword == computePasswordHash(userPassword))
+                    {
+                        return true; //Password matches, user may login.
+                    }
+                    else
+                    {
+                        return false; //Password does not match, user may not login
+                    }
                 }
-                else 
-                {
-                    return false; //Password does not match, user may not login
-                }
-            }
 
             return false;
         }
