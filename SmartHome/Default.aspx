@@ -19,7 +19,7 @@
             <h5><a href="PatientProfile.aspx">Patient Profile and Medical Monitoring</a></h5>
             View your patient profile and&nbsp; monitor your medical status via sensors in site.</li>
         <li class="two">
-            <h5>Set a medical reminder</h5>
+            <h5><a href="ReminderSetting.aspx">Set a medical reminder</a></h5>
             Setup a medical reminder to help patient remember.</li>
         <li class="three">
             <h5>Find Web Hosting</h5>
