@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AccessDenied.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
@@ -236,6 +237,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="About.aspx.cs">
