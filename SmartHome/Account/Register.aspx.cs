@@ -16,6 +16,7 @@ namespace SmartHome.Account
             RegisterUser.ContinueDestinationPageUrl = Request.QueryString["ReturnUrl"];
         }
 
+        //Logs in the user and sets the cookie on their broswer so they are logged in next time they visit
         protected void RegisterUser_CreatedUser(object sender, EventArgs e)
         {
             FormsAuthentication.SetAuthCookie(RegisterUser.UserName, createPersistentCookie: false);
