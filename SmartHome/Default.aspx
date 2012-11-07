@@ -5,7 +5,7 @@
         <div class="content-wrapper">
             <hgroup class="title">
                 <h1>.</h1>
-                <h2>Smart Home Medical Monitroing System</h2>
+                <h2>Smart Home Medical Monitoring System</h2>
             </hgroup>
             <p>
                 Please Log in before accessing system features.</p>
