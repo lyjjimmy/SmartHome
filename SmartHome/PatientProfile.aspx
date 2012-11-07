@@ -1,14 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PatientProfile.aspx.cs" Inherits="SmartHome.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
-<<<<<<< HEAD
-        .auto-style2 {
-            height: 23px;
-            width: 216px;
-            background-color: #CCCCCC;
-        }
-=======
->>>>>>> User Classes
         .auto-style5 {
             width: 861px;
         }
@@ -94,13 +86,8 @@
             <td class="auto-style28">
                 <asp:Label ID="patientNameLabel" runat="server" Text="Label for Patient Name" Font-Bold="True" Font-Size="Medium"></asp:Label>
             </td>
-<<<<<<< HEAD
-            <td class="auto-style9">Patient Contact</td>
-            <td class="auto-style2">
-=======
             <td class="auto-style25">Patient Contact</td>
             <td class="auto-style17">
->>>>>>> User Classes
                 <asp:Label ID="patientContactLabel" runat="server" Text="Label for Patient Contact"></asp:Label>
             </td>
         </tr>
@@ -165,9 +152,6 @@
     <br />
     <asp:Button ID="startRecordButton" runat="server" Text="Start Live Recording" OnClick="startRecordButton_Click" />
     <asp:Button ID="endRecordButton" runat="server" Text="End Live Recording" OnClick="endRecordButton_Click" />
-<<<<<<< HEAD
-=======
     <asp:Timer ID="monitorTimer" runat="server" Enabled="False" Interval="5000" OnTick="monitorTimer_Tick">
     </asp:Timer>
->>>>>>> User Classes
 </asp:Content>

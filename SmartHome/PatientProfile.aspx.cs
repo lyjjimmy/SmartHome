@@ -5,20 +5,12 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SmartHome.Classes;
-<<<<<<< HEAD
-using System.Threading;
-=======
->>>>>>> User Classes
 
 namespace SmartHome
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
         Patient patient;
-<<<<<<< HEAD
-        bool liveMonitorStatus = false;
-=======
->>>>>>> User Classes
 
         //for demo purpose only 
         RandomSensorGenerator heartRateSimulator;
@@ -33,11 +25,7 @@ namespace SmartHome
         {
             //for demo purpose only
             //dump data for testing only
-<<<<<<< HEAD
-            patient = new Patient("David Daves", "02-12345678");
-=======
             patient = new Patient("David Mayor", "02-12345678");
->>>>>>> User Classes
             Doctor doctor1 = new Doctor("Yanni", "02-98765432");
             Doctor doctor2 = new Doctor("Cominal", "02-55667788");
             Carrer carrer1 = new Carrer("Oreo Lingard", "02-11223344");
@@ -51,23 +39,6 @@ namespace SmartHome
 
             patientNameLabel.Text = patient.UserName;
             patientContactLabel.Text = patient.UserContact;
-<<<<<<< HEAD
-            string doctorString = "";
-            foreach (Doctor d in patient.associatedDoctors)
-            {
-                doctorString += d.ToString() + "\n";
-            }
-            patientDoctorLabel.Text = doctorString;
-            string carrerString = "";
-            foreach (Carrer c in patient.associatedCarrers)
-            {
-                carrerString += c.ToString() + "\n";
-            }
-            patientCarrerLabel.Text = carrerString;
-            
-            //for demo purpose only
-            //sensor generator stuff
-=======
             doctorsBulletedList.Items.Clear();
             foreach (Doctor d in patient.associatedDoctors)
             {
@@ -82,58 +53,22 @@ namespace SmartHome
             
             //for demo purpose only
             //sensor generator setup
->>>>>>> User Classes
             heartRateSimulator = new RandomSensorGenerator(new Sensor((int)Sensor.SensorTypes.HEART_RATE, "HR-1", "-1"));
             bloodPressureSimulator = new RandomSensorGenerator(new Sensor((int)Sensor.SensorTypes.BLOOD_PRESSURE, "BP-1", "-1"));
             temperatureSimulator = new RandomSensorGenerator(new Sensor((int)Sensor.SensorTypes.TEMPERATURE, "BT-1", "-1"));
             bodyStatusSimulator = new RandomSensorGenerator(new Sensor((int)Sensor.SensorTypes.FAIL_STATUS, "MM-1", "False"));
             locationSimulator = new RandomSensorGenerator(new Sensor((int)Sensor.SensorTypes.GPS, "LS-1", "0,0"));
-<<<<<<< HEAD
-            //end demo only stuff
-=======
             //end sensor generator setup
             //end demo only stuff
 
->>>>>>> User Classes
         }
 
         protected void startRecordButton_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            //liveMonitorStatus = true;
-
-            //while (liveMonitorStatus != false)
-            //{
-                liveHeartRateLabel.Text = heartRateSimulator.returnData();
-                heartRateSimulator.Sensor.SensorData = liveHeartRateLabel.Text;
-
-                liveBloodPressureLabel.Text = bloodPressureSimulator.returnData();
-                bloodPressureSimulator.Sensor.SensorData = liveBloodPressureLabel.Text;
-
-                liveTemperatureLabel.Text = temperatureSimulator.returnData();
-                temperatureSimulator.Sensor.SensorData = liveTemperatureLabel.Text;
-
-                liveFallStatusLabel.Text = bodyStatusSimulator.returnData();
-                bodyStatusSimulator.Sensor.SensorData = liveFallStatusLabel.Text;
-
-                liveLocationLabel.Text = locationSimulator.returnData();
-                locationSimulator.Sensor.SensorData = liveLocationLabel.Text;
-                //Thread.Sleep(5000);
-            //}
-            //TODO more works to bring this things refersh every 30 seconds with live data
-            //TODO using a Timer to bring this thing live
-            //TODO brings medical alarm here
-        }
-
-        protected void endRecordButton_Click(object sender, EventArgs e)
-        {
-            //liveMonitorStatus = false;l
-=======
             monitorTimer.Enabled = true;
             //TODO more works to bring this things refersh every 30 seconds with live data
             //TODO using a Timer to bring this thing live
             //TODO brings medical alarm here
->>>>>>> User Classes
         }
 
         private void GenerateDataOnce()

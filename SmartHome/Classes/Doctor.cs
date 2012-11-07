@@ -17,11 +17,7 @@ namespace SmartHome.Classes
             doctorPatient = new List<Patient>();
         }
 
-<<<<<<< HEAD
-        public void linkPatient(Patient patient)
-=======
         public void LinkPatient(Patient patient)
->>>>>>> User Classes
         {
             doctorPatient.Add(patient);
         }
