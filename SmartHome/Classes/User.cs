@@ -8,7 +8,7 @@ namespace SmartHome.Classes
 {
     public abstract class User
     {
-        public enum UserTypes { PATIENT, DOCTOR, CARRER, OPERATOR };
+        public enum UserTypes { PATIENT, DOCTOR, CARER, OPERATOR };
         
         //Internal username
         private int userID;
