@@ -92,9 +92,9 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style32">Associated Carrer</td>
+            <td class="auto-style32">Associated Carer</td>
             <td class="auto-style29">
-                <asp:BulletedList ID="carrersBulletedList" runat="server">
+                <asp:BulletedList ID="carersBulletedList" runat="server">
                 </asp:BulletedList>
             </td>
             <td class="auto-style26">Associated Doctor</td>

@@ -21,7 +21,7 @@ namespace SmartHome
             //
             List<Patient> patientsList = new List<Patient>();
             List<Doctor> doctorsList = new List<Doctor>();
-            List<Carrer> carrersList = new List<Carrer>();
+            List<Carer> carersList = new List<Carer>();
             List<Reminder> reminders = new List<Reminder>();
 
             //dummy testing data only
@@ -43,29 +43,29 @@ namespace SmartHome
             doctor2.UserPassword = "doctor2";
             Doctor doctor3 = new Doctor("Weather Man", "03-48512697");
             doctor3.UserPassword = "doctor3";
-            //carrers
-            Carrer carrer1 = new Carrer("Oreo Lingard", "02-11223344");
-            carrer1.UserPassword = "carrer1";
-            Carrer carrer2 = new Carrer("Lily", "02-99887766");
-            carrer2.UserPassword = "carrer2";
-            Carrer carrer3 = new Carrer("Omo", "03-74620139");
-            carrer3.UserPassword = "carrer3";
+            //carers
+            Carer carer1 = new Carer("Oreo Lingard", "02-11223344");
+            carer1.UserPassword = "carer1";
+            Carer carer2 = new Carer("Lily", "02-99887766");
+            carer2.UserPassword = "carer2";
+            Carer carer3 = new Carer("Omo", "03-74620139");
+            carer3.UserPassword = "carer3";
 
             //patient relationships
             patient1.addDoctor(doctor1);
             patient1.addDoctor(doctor2);
-            patient1.addCarrer(carrer1);
-            patient1.addCarrer(carrer2);
+            patient1.addCarer(carer1);
+            patient1.addCarer(carer2);
             patient2.addDoctor(doctor2);
-            patient2.addCarrer(carrer2);
-            patient2.addCarrer(carrer3);
+            patient2.addCarer(carer2);
+            patient2.addCarer(carer3);
             patient3.addDoctor(doctor1);
             patient3.addDoctor(doctor3);
-            patient3.addCarrer(carrer3);
+            patient3.addCarer(carer3);
             patient4.addDoctor(doctor2);
-            patient4.addCarrer(carrer2);
+            patient4.addCarer(carer2);
             patient5.addDoctor(doctor3);
-            patient5.addCarrer(carrer1);
+            patient5.addCarer(carer1);
 
             //doctor's patient list
             doctor1.LinkPatient(patient1);
@@ -76,14 +76,14 @@ namespace SmartHome
             doctor3.LinkPatient(patient3);
             doctor3.LinkPatient(patient5);
 
-            //carrer's patient list
-            carrer1.LinkPatient(patient1);
-            carrer1.LinkPatient(patient5);
-            carrer2.LinkPatient(patient1);
-            carrer2.LinkPatient(patient2);
-            carrer2.LinkPatient(patient4);
-            carrer3.LinkPatient(patient2);
-            carrer3.LinkPatient(patient3);
+            //carer's patient list
+            carer1.LinkPatient(patient1);
+            carer1.LinkPatient(patient5);
+            carer2.LinkPatient(patient1);
+            carer2.LinkPatient(patient2);
+            carer2.LinkPatient(patient4);
+            carer3.LinkPatient(patient2);
+            carer3.LinkPatient(patient3);
 
             //add all peopel to the list
             patientsList.Add(patient1);
@@ -94,9 +94,9 @@ namespace SmartHome
             doctorsList.Add(doctor1);
             doctorsList.Add(doctor2);
             doctorsList.Add(doctor3);
-            carrersList.Add(carrer1);
-            carrersList.Add(carrer2);
-            carrersList.Add(carrer3);
+            carersList.Add(carer1);
+            carersList.Add(carer2);
+            carersList.Add(carer3);
             //end demo only stuff
             //end dummy testing data
         }

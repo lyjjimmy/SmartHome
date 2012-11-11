@@ -31,13 +31,13 @@ namespace SmartHome {
         protected global::System.Web.UI.WebControls.Label patientContactLabel;
         
         /// <summary>
-        /// carrersBulletedList control.
+        /// carersBulletedList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.BulletedList carrersBulletedList;
+        protected global::System.Web.UI.WebControls.BulletedList carersBulletedList;
         
         /// <summary>
         /// doctorsBulletedList control.

@@ -98,11 +98,11 @@
       <FileName>Account\RegisterExternalLogin.aspx.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartHome.Classes.Carrer" Collapsed="true">
+  <Class Name="SmartHome.Classes.Carer" Collapsed="true">
     <Position X="5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
-      <FileName>Classes\Carrer.cs</FileName>
+      <FileName>Classes\Carer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmartHome.Classes.Doctor" Collapsed="true">

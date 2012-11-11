@@ -288,7 +288,7 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Carrer.cs" />
+    <Compile Include="Classes\Carer.cs" />
     <Compile Include="Classes\Doctor.cs" />
     <Compile Include="Classes\Patient.cs" />
     <Compile Include="Classes\Reminder.cs" />

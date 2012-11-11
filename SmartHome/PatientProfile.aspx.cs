@@ -28,12 +28,12 @@ namespace SmartHome
             patient = new Patient("David Mayor", "02-12345678");
             Doctor doctor1 = new Doctor("Yanni", "02-98765432");
             Doctor doctor2 = new Doctor("Cominal", "02-55667788");
-            Carrer carrer1 = new Carrer("Oreo Lingard", "02-11223344");
-            Carrer carrer2 = new Carrer("Lily", "02-99887766");
+            Carer carer1 = new Carer("Oreo Lingard", "02-11223344");
+            Carer carer2 = new Carer("Lily", "02-99887766");
             patient.addDoctor(doctor1);
             patient.addDoctor(doctor2);
-            patient.addCarrer(carrer1);
-            patient.addCarrer(carrer2);
+            patient.addCarer(carer1);
+            patient.addCarer(carer2);
             //end dump testing data
             //end demo only stuff
 
@@ -44,11 +44,11 @@ namespace SmartHome
             {
                 doctorsBulletedList.Items.Add(d.ToString());
             }
-            carrersBulletedList.Items.Clear();
-            foreach (Carrer c in patient.associatedCarrers)
+            carersBulletedList.Items.Clear();
+            foreach (Carer c in patient.associatedCarers)
             {
                 
-                carrersBulletedList.Items.Add(c.ToString());
+                carersBulletedList.Items.Add(c.ToString());
             }
             
             //for demo purpose only

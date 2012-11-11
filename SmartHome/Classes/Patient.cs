@@ -8,7 +8,7 @@ namespace SmartHome.Classes
     public class Patient:User
     {
         public List<Doctor> associatedDoctors;
-        public List<Carrer> associatedCarrers;
+        public List<Carer> associatedCarers;
 
         public Patient(string name, string contact)
         {
@@ -16,7 +16,7 @@ namespace SmartHome.Classes
             UserContact = contact;
             UserType = (int)User.UserTypes.PATIENT;
             associatedDoctors = new List<Doctor>();
-            associatedCarrers = new List<Carrer>();
+            associatedCarers = new List<Carer>();
         }
 
         public void addDoctor(Doctor doctor)
@@ -24,9 +24,9 @@ namespace SmartHome.Classes
             associatedDoctors.Add(doctor);
         }
 
-        public void addCarrer(Carrer carrer)
+        public void addCarer(Carer carer)
         {
-            associatedCarrers.Add(carrer);
+            associatedCarers.Add(carer);
         }
     }
 }

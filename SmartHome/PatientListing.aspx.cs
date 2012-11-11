@@ -11,7 +11,7 @@ namespace SmartHome
     public partial class PatientListing : System.Web.UI.Page
     {
         Doctor doctor;
-        Carrer carrer;
+        Carer carer;
 
         protected void Page_Load(object sender, EventArgs e)
         {

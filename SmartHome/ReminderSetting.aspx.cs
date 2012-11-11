@@ -10,7 +10,7 @@ namespace SmartHome
     public partial class WebForm2 : System.Web.UI.Page
     {
         DateTime reminderTime;
-        //TODO Space reserve for doctor / carrer / operator object to retrieve their patient list
+        //TODO Space reserve for doctor / carer / operator object to retrieve their patient list
         
         //Something to test
         List<int> testIntList = new List<int>();

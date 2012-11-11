@@ -5,21 +5,21 @@ using System.Web;
 
 namespace SmartHome.Classes
 {
-    public class Carrer : User
+    public class Carer : User
     {
-        public List<Patient> carrerPatient;
+        public List<Patient> carerPatient;
 
-        public Carrer(string name, string contact)
+        public Carer(string name, string contact)
         {
             UserName = name;
             UserContact = contact;
             UserType = (int)User.UserTypes.CARRER;
-            carrerPatient = new List<Patient>();
+            carerPatient = new List<Patient>();
         }
 
         public void LinkPatient(Patient patient)
         {
-            carrerPatient.Add(patient);
+            carerPatient.Add(patient);
         }
     }
 }
