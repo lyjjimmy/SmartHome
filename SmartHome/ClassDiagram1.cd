@@ -46,7 +46,7 @@
     <Position X="11" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAIIAAAAAAgAAAAAEEAQAAQQGAAAgBAAgAAAkIAARA=</HashCode>
-      <FileName>PatientProfile.aspx.cs</FileName>
+      <FileName>ResidentProfile.aspx.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmartHome.WebForm2" Collapsed="true">
@@ -112,11 +112,11 @@
       <FileName>Classes\Doctor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartHome.Classes.Patient" Collapsed="true">
+  <Class Name="SmartHome.Classes.Resident" Collapsed="true">
     <Position X="2.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAAAIAAAAAAAAAACAAAAABAAAA=</HashCode>
-      <FileName>Classes\Patient.cs</FileName>
+      <FileName>Classes\Resident.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmartHome.Classes.RandomSensorGenerator" Collapsed="true">

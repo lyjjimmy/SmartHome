@@ -198,8 +198,8 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
-    <Content Include="PatientListing.aspx" />
-    <Content Include="PatientProfile.aspx" />
+    <Content Include="ResidentListing.aspx" />
+    <Content Include="ResidentProfile.aspx" />
     <Content Include="ReminderSetting.aspx" />
     <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
@@ -290,7 +290,7 @@
     </Compile>
     <Compile Include="Classes\Carer.cs" />
     <Compile Include="Classes\Doctor.cs" />
-    <Compile Include="Classes\Patient.cs" />
+    <Compile Include="Classes\Resident.cs" />
     <Compile Include="Classes\Reminder.cs" />
     <Compile Include="Classes\Sensor.cs" />
     <Compile Include="Classes\RandomSensorGenerator.cs" />
@@ -312,12 +312,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="PatientListing.aspx.cs">
-      <DependentUpon>PatientListing.aspx</DependentUpon>
+    <Compile Include="ResidentListing.aspx.cs">
+      <DependentUpon>ResidentListing.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PatientListing.aspx.designer.cs">
-      <DependentUpon>PatientListing.aspx</DependentUpon>
+    <Compile Include="ResidentListing.aspx.designer.cs">
+      <DependentUpon>ResidentListing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -327,12 +327,12 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="PatientProfile.aspx.cs">
-      <DependentUpon>PatientProfile.aspx</DependentUpon>
+    <Compile Include="ResidentProfile.aspx.cs">
+      <DependentUpon>ResidentProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PatientProfile.aspx.designer.cs">
-      <DependentUpon>PatientProfile.aspx</DependentUpon>
+    <Compile Include="ResidentProfile.aspx.designer.cs">
+      <DependentUpon>ResidentProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="ReminderSetting.aspx.cs">
       <DependentUpon>ReminderSetting.aspx</DependentUpon>

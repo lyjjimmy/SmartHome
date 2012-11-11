@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PatientProfile.aspx.cs" Inherits="SmartHome.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ResidentProfile.aspx.cs" Inherits="SmartHome.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
         .auto-style5 {
@@ -72,7 +72,7 @@
         <div class="content-wrapper">
             <hgroup class="title">
                 <h1><%: Title %>.</h1>
-                <h2>Patient Profile</h2>
+                <h2>Resident Profile</h2>
             </hgroup>
             <p>
                 To start, hit the &quot;Start Live Monitoring&quot; button to start your simulation</p>
@@ -82,13 +82,13 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <table class="auto-style5">
         <tr>
-            <td class="auto-style31">Patient Name</td>
+            <td class="auto-style31">Resident Name</td>
             <td class="auto-style28">
-                <asp:Label ID="patientNameLabel" runat="server" Text="Label for Patient Name" Font-Bold="True" Font-Size="Medium"></asp:Label>
+                <asp:Label ID="residentNameLabel" runat="server" Text="Label for Resident Name" Font-Bold="True" Font-Size="Medium"></asp:Label>
             </td>
-            <td class="auto-style25">Patient Contact</td>
+            <td class="auto-style25">Resident Contact</td>
             <td class="auto-style17">
-                <asp:Label ID="patientContactLabel" runat="server" Text="Label for Patient Contact"></asp:Label>
+                <asp:Label ID="residentContactLabel" runat="server" Text="Label for Resident Contact"></asp:Label>
             </td>
         </tr>
         <tr>

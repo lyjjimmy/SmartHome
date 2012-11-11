@@ -10,7 +10,7 @@ namespace SmartHome
     public partial class WebForm2 : System.Web.UI.Page
     {
         DateTime reminderTime;
-        //TODO Space reserve for doctor / carer / operator object to retrieve their patient list
+        //TODO Space reserve for doctor / carer / operator object to retrieve their resident list
         
         //Something to test
         List<int> testIntList = new List<int>();
@@ -26,7 +26,7 @@ namespace SmartHome
             testIntList.Add(52);
             foreach (int i in testIntList)
             {
-                patientDropList.Items.Add(i.ToString());
+                residentDropList.Items.Add(i.ToString());
             }
             //end something to test
         }
@@ -45,7 +45,7 @@ namespace SmartHome
 
         protected void clearButton_Click(object sender, EventArgs e)
         {
-            patientDropList.ClearSelection();
+            residentDropList.ClearSelection();
             dateTextLabel.Text = "";
             timeTextLabel.Text = "";
             datePicker.SelectedDate = DateTime.Today;
@@ -57,7 +57,7 @@ namespace SmartHome
         protected void submitButton_Click(object sender, EventArgs e)
         {
             //TODO write code to submit the reminder to the server
-            //     and notify the patient at specific time.
+            //     and notify the resident at specific time.
         }
 
         protected void hourPicker_SelectedIndexChanged(object sender, EventArgs e)

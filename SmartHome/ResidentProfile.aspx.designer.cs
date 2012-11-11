@@ -13,22 +13,22 @@ namespace SmartHome {
     public partial class WebForm1 {
         
         /// <summary>
-        /// patientNameLabel control.
+        /// residentNameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label patientNameLabel;
+        protected global::System.Web.UI.WebControls.Label residentNameLabel;
         
         /// <summary>
-        /// patientContactLabel control.
+        /// residentContactLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label patientContactLabel;
+        protected global::System.Web.UI.WebControls.Label residentContactLabel;
         
         /// <summary>
         /// carersBulletedList control.

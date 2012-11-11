@@ -7,11 +7,11 @@ namespace SmartHome.Classes
 {
     public class Reminder
     {
-        private Patient patient;
-        public Patient Patient
+        private Resident resident;
+        public Resident Resident
         {
-            get { return patient; }
-            set { value = patient; }
+            get { return resident; }
+            set { value = resident; }
         }
 
         private DateTime remindingTime;
@@ -28,9 +28,9 @@ namespace SmartHome.Classes
             set { value = message; }
         }
 
-        public Reminder(Patient patient, DateTime date, string message)
+        public Reminder(Resident resident, DateTime date, string message)
         {
-            Patient = patient;
+            Resident = resident;
             RemindingTime = date;
             Message = message;
         }

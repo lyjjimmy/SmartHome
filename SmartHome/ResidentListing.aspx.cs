@@ -8,7 +8,7 @@ using SmartHome.Classes;
 
 namespace SmartHome
 {
-    public partial class PatientListing : System.Web.UI.Page
+    public partial class ResidentListing : System.Web.UI.Page
     {
         Doctor doctor;
         Carer carer;

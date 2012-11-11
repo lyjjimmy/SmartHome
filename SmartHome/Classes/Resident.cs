@@ -5,16 +5,16 @@ using System.Web;
 
 namespace SmartHome.Classes
 {
-    public class Patient:User
+    public class Resident:User
     {
         public List<Doctor> associatedDoctors;
         public List<Carer> associatedCarers;
 
-        public Patient(string name, string contact)
+        public Resident(string name, string contact)
         {
             UserName = name;
             UserContact = contact;
-            UserType = (int)User.UserTypes.PATIENT;
+            UserType = (int)User.UserTypes.RESIDENT;
             associatedDoctors = new List<Doctor>();
             associatedCarers = new List<Carer>();
         }

@@ -7,19 +7,19 @@ namespace SmartHome.Classes
 {
     public class Doctor : User
     {
-        public List<Patient> doctorPatient;
+        public List<Resident> doctorResident;
 
         public Doctor(string name, string contact)
         {
             UserName = name;
             UserContact = contact;
             UserType = (int)User.UserTypes.DOCTOR;
-            doctorPatient = new List<Patient>();
+            doctorResident = new List<Resident>();
         }
 
-        public void LinkPatient(Patient patient)
+        public void LinkResident(Resident resident)
         {
-            doctorPatient.Add(patient);
+            doctorResident.Add(resident);
         }
     }
 }

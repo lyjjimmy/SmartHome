@@ -10,7 +10,7 @@ namespace SmartHome
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        Patient patient;
+        Resident resident;
 
         //for demo purpose only 
         RandomSensorGenerator heartRateSimulator;
@@ -25,27 +25,27 @@ namespace SmartHome
         {
             //for demo purpose only
             //dump data for testing only
-            patient = new Patient("David Mayor", "02-12345678");
+            resident = new Resident("David Mayor", "02-12345678");
             Doctor doctor1 = new Doctor("Yanni", "02-98765432");
             Doctor doctor2 = new Doctor("Cominal", "02-55667788");
             Carer carer1 = new Carer("Oreo Lingard", "02-11223344");
             Carer carer2 = new Carer("Lily", "02-99887766");
-            patient.addDoctor(doctor1);
-            patient.addDoctor(doctor2);
-            patient.addCarer(carer1);
-            patient.addCarer(carer2);
+            resident.addDoctor(doctor1);
+            resident.addDoctor(doctor2);
+            resident.addCarer(carer1);
+            resident.addCarer(carer2);
             //end dump testing data
             //end demo only stuff
 
-            patientNameLabel.Text = patient.UserName;
-            patientContactLabel.Text = patient.UserContact;
+            residentNameLabel.Text = resident.UserName;
+            residentContactLabel.Text = resident.UserContact;
             doctorsBulletedList.Items.Clear();
-            foreach (Doctor d in patient.associatedDoctors)
+            foreach (Doctor d in resident.associatedDoctors)
             {
                 doctorsBulletedList.Items.Add(d.ToString());
             }
             carersBulletedList.Items.Clear();
-            foreach (Carer c in patient.associatedCarers)
+            foreach (Carer c in resident.associatedCarers)
             {
                 
                 carersBulletedList.Items.Add(c.ToString());

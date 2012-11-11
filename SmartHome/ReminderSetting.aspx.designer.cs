@@ -13,13 +13,13 @@ namespace SmartHome {
     public partial class WebForm2 {
         
         /// <summary>
-        /// patientDropList control.
+        /// residentDropList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList patientDropList;
+        protected global::System.Web.UI.WebControls.DropDownList residentDropList;
         
         /// <summary>
         /// dateTextLabel control.

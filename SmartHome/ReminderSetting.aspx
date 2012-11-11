@@ -45,16 +45,16 @@
                 <h2>Medical Reminder</h2>
             </hgroup>
             <p>
-                Here you can set a reminder for a patient. To start, fill the form and submit the request to the server.</p>
+                Here you can set a reminder for a resident. To start, fill the form and submit the request to the server.</p>
         </div>
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <table style="width:100%;">
         <tr>
-            <td class="auto-style2">Receving Patient</td>
+            <td class="auto-style2">Receving Resident</td>
             <td class="auto-style3">
-                <asp:DropDownList ID="patientDropList" runat="server" Height="35px" Width="456px" Font-Size="Medium">
+                <asp:DropDownList ID="residentDropList" runat="server" Height="35px" Width="456px" Font-Size="Medium">
                 </asp:DropDownList>
             </td>
         </tr>

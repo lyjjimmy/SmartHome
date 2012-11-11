@@ -16,10 +16,14 @@
     <h3>We suggest the following:</h3>
     <ol class="round">
         <li class="one">
-            <h5><a href="PatientProfile.aspx">Patient Profile and Medical Monitoring</a></h5>
-            View your patient profile and&nbsp; monitor your medical status via sensors in site.</li>
+            <h5><a href="ResidentProfile.aspx">Resident Profile and Medical Monitoring</a></h5>
+            View your resident profile and monitor your medical status via sensors in site.</li>
         <li class="two">
-            <h5><a href="ReminderSetting.aspx">Set a medical reminder</a></h5>
-            Setup a medical reminder to help patient remember.</li>
+            <h5><a href="ReminderSetting.aspx">Set a Medical Reminder</a></h5>
+            Setup a medical reminder to help resident remember.</li>
+        <li class="three">
+            <h5><a href="ResidentListing.aspx">See Resident Overview</a></h5>
+            See an overview of current residents status.
+        </li>
     </ol>
 </asp:Content>
