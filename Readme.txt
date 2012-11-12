@@ -16,7 +16,7 @@ If you are deploying the system:
 Prerequisites: IIS Server or IIS Express
 
 1. Browse over to the Source folder
-2. Copy the files into your IIS site directory
+2. Copy the files within the SmartHome folder into your IIS site directory
 3. Open your browser and browse over to where the IIS server is situated
 
 We have set up some logins for the system, their details are below.
